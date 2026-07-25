@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lithocoon — Lithothérapie, pierres & rituels de bien-être</title>
+<meta name="description" content="Lithocoon, par Bengacoon : 112 pierres détaillées, un créateur de bracelets sur mesure, un calendrier lunaire et des rituels. Un guide de lithothérapie premium, 100 % hors ligne.">
+<link rel="icon" href="assets/favicon.png">
+<meta property="og:title" content="Lithocoon — Lithothérapie & pierres">
+<meta property="og:description" content="112 pierres illustrées, bracelets sur mesure, calendrier lunaire et journal de ressentis. Un compagnon de lithothérapie tout en justesse.">
+<meta property="og:image" content="assets/icon.png">
+<style>
+  :root{
+    --nuit:#2E2A47; --nuit-fonce:#211E36; --or:#C9A86A; --or-clair:#E3CB98;
+    --creme:#F6F2E9; --creme-2:#EEE7D7; --texte:#2A2A28; --muted:#6E6A60;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--texte); background:var(--creme); line-height:1.6;
+  }
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:20;background:rgba(246,242,233,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--creme-2)}
+  header .wrap{display:flex;align-items:center;gap:12px;height:64px}
+  header img{width:36px;height:36px;border-radius:9px}
+  header .brand{font-weight:800;font-size:19px;letter-spacing:.2px}
+  header .brand small{display:block;font-weight:600;font-size:11px;color:var(--muted);letter-spacing:.3px}
+  header nav{margin-left:auto;display:flex;gap:22px;font-size:14px;font-weight:600}
+  header nav a{color:var(--muted);text-decoration:none}
+  header nav a:hover{color:var(--nuit)}
+  @media(max-width:640px){header nav{display:none}}
+
+  /* Hero */
+  .hero{background:linear-gradient(160deg,var(--nuit) 0%,var(--nuit-fonce) 100%);color:#fff;text-align:center;padding:72px 0 84px;position:relative;overflow:hidden}
+  .hero .gem{position:absolute;opacity:.10;background:var(--or-clair)}
+  .hero .g1{width:240px;height:240px;top:-70px;left:-50px;border-radius:38% 62% 55% 45% / 45% 40% 60% 55%;transform:rotate(20deg)}
+  .hero .g2{width:180px;height:180px;bottom:-60px;right:-40px;border-radius:60% 40% 45% 55% / 55% 60% 40% 45%;transform:rotate(-15deg)}
+  .hero .logo{width:98px;height:98px;border-radius:24px;box-shadow:0 12px 34px rgba(0,0,0,.32);margin-bottom:22px;position:relative}
+  .hero h1{font-size:44px;line-height:1.1;font-weight:800;letter-spacing:-.5px;position:relative}
+  .hero .par{color:var(--or-clair);font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;position:relative}
+  .hero p.lead{max-width:620px;margin:18px auto 0;font-size:18px;color:#E9E6F2;position:relative}
+  @media(max-width:640px){.hero h1{font-size:33px}.hero p.lead{font-size:16px}}
+
+  .stores{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px;position:relative}
+  .store{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--nuit);font-weight:700;
+    padding:13px 22px;border-radius:14px;text-decoration:none;font-size:15px;box-shadow:0 6px 18px rgba(0,0,0,.20);transition:transform .15s}
+  .store:hover{transform:translateY(-2px)}
+  .store.soon{background:rgba(255,255,255,.14);color:#fff;box-shadow:none;border:1px solid rgba(255,255,255,.3)}
+  .store .em{font-size:20px}
+  .store small{display:block;font-weight:600;font-size:11px;opacity:.7}
+
+  /* Sections */
+  section{padding:66px 0}
+  .eyebrow{color:var(--or);font-weight:800;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;text-align:center}
+  h2{font-size:31px;font-weight:800;text-align:center;margin:8px 0 8px;letter-spacing:-.3px}
+  .sub{text-align:center;color:var(--muted);max-width:640px;margin:0 auto 42px;font-size:16px}
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--creme-2);border-radius:18px;padding:26px 22px;transition:transform .15s,box-shadow .15s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(46,42,71,.10)}
+  .card .em{font-size:30px;display:inline-block;margin-bottom:12px}
+  .card h3{font-size:18px;font-weight:800;margin-bottom:7px;color:var(--nuit)}
+  .card p{color:var(--muted);font-size:14.5px}
+
+  /* Premium band */
+  .premium{background:var(--creme-2)}
+  .premium .box{background:#fff;border:1px solid #E7DFCB;border-radius:22px;padding:40px 34px;text-align:center;max-width:720px;margin:0 auto;position:relative}
+  .premium .price{display:inline-block;background:var(--or);color:#3a2e12;font-weight:800;padding:6px 16px;border-radius:999px;font-size:14px;margin-bottom:14px}
+  .premium h2{margin-top:0}
+  .premium ul{list-style:none;display:inline-block;text-align:left;margin:18px auto 0;color:var(--texte)}
+  .premium li{padding:5px 0 5px 30px;position:relative;font-size:15px}
+  .premium li::before{content:"💎";position:absolute;left:0}
+  .premium .free{color:var(--muted);font-size:14px;margin-top:20px}
+
+  /* Privacy strip */
+  .privacy{background:var(--nuit);color:#E9E6F2;text-align:center}
+  .privacy h2{color:#fff}
+  .privacy .sub{color:#CFC9E0}
+
+  footer{background:var(--nuit-fonce);color:#BEB8D0;text-align:center;padding:40px 0;font-size:13.5px}
+  footer a{color:var(--or-clair);text-decoration:none}
+  footer .disc{max-width:660px;margin:16px auto 0;font-size:12px;color:#948EB0;line-height:1.5}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img src="assets/icon.png" alt="Lithocoon">
+    <div class="brand">Lithocoon<small>par Bengacoon</small></div>
+    <nav>
+      <a href="#fonctions">Fonctions</a>
+      <a href="#premium">Version complète</a>
+      <a href="#confidentialite">Confidentialité</a>
+      <a href="privacy.html">Mentions</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <span class="gem g1"></span><span class="gem g2"></span>
+  <div class="wrap">
+    <img class="logo" src="assets/icon.png" alt="Lithocoon">
+    <div class="par">par Bengacoon</div>
+    <h1>Lithocoon</h1>
+    <p class="lead">Votre compagnon de lithothérapie : un catalogue premium de pierres, des bracelets sur mesure et des rituels au fil de la lune. Élégant, complet et 100 % hors ligne.</p>
+    <div class="stores">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.bengacoon.lithotherapie">
+        <span class="em">▶</span><span><small>Disponible sur</small>Google&nbsp;Play</span>
+      </a>
+      <a class="store soon" href="#">
+        <span class="em"></span><span><small>Bientôt sur</small>App&nbsp;Store</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<section id="fonctions">
+  <div class="wrap">
+    <div class="eyebrow">Ce que fait l'app</div>
+    <h2>La lithothérapie, avec justesse</h2>
+    <p class="sub">Découvrir, composer et vivre les pierres au quotidien — sans compte, sans jargon.</p>
+    <div class="grid">
+      <div class="card">
+        <span class="em">💎</span><h3>112 pierres détaillées</h3>
+        <p>Minéralogie exacte, chakras, correspondances, origines, authenticité et contrefaçons. Chaque pierre a aussi son « côté ombre » : quand l'éviter, comment l'équilibrer.</p>
+      </div>
+      <div class="card">
+        <span class="em">🔮</span><h3>Collection Prestige</h3>
+        <p>24 pierres rares et spectaculaires — azurite, tourmalines pastèque, super seven, crocoïte… — illustrées et réservées à la version complète.</p>
+      </div>
+      <div class="card">
+        <span class="em">💠</span><h3>Créez vos bracelets</h3>
+        <p>Un configurateur intelligent : taille des perles, composition équilibrée, analyse de synergie colorée. Enregistrez, ajoutez photo et notes, suivez l'entretien.</p>
+      </div>
+      <div class="card">
+        <span class="em">🌙</span><h3>Calendrier lunaire & rituels</h3>
+        <p>Suivez les phases de la lune, sachez quand recharger vos pierres, et accordez-vous un rituel de purification guidé avec un minuteur apaisant.</p>
+      </div>
+      <div class="card">
+        <span class="em">📔</span><h3>Journal de ressentis</h3>
+        <p>Notez votre bien-être avant et après chaque séance et visualisez votre évolution au fil du temps, en toute intimité.</p>
+      </div>
+      <div class="card">
+        <span class="em">🧭</span><h3>Oracle & assistant</h3>
+        <p>Une pierre du jour inspirante, et un assistant qui vous conseille la bonne pierre selon votre intention : apaisement, confiance, amour, énergie…</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="premium" class="premium">
+  <div class="wrap">
+    <div class="box">
+      <span class="price">Achat unique · 7,90 €</span>
+      <h2>La version complète, sans abonnement</h2>
+      <p class="sub" style="margin-bottom:6px">Débloquez toute la richesse de Lithocoon d'un seul achat, à vie.</p>
+      <ul>
+        <li>Les 112 pierres, dont la Collection Prestige</li>
+        <li>Création et enregistrement de bracelets</li>
+        <li>Journal de ressentis et courbe d'évolution</li>
+        <li>Calendrier lunaire et rituels de purification</li>
+      </ul>
+      <p class="free">La version gratuite « Découverte » offre 56 pierres, l'oracle et l'assistant — pour explorer l'app en toute liberté.</p>
+    </div>
+  </div>
+</section>
+
+<section id="confidentialite" class="privacy">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--or-clair)">Vos données, chez vous</div>
+    <h2>Rien ne quitte votre téléphone</h2>
+    <p class="sub">Aucune donnée personnelle envoyée sur Internet, aucun compte à créer. Verrouillage par code ou empreinte, et 9 langues disponibles.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <strong>Lithocoon</strong> — par Bengacoon · Disponible en 9 langues<br>
+    <a href="privacy.html">Politique de confidentialité</a> &nbsp;·&nbsp; © 2026 Bengacoon
+    <p class="disc">Lithocoon est une application de bien-être. La lithothérapie est présentée comme une tradition de bien-être : elle n'établit aucun diagnostic, ne constitue pas un traitement et ne remplace pas l'avis d'un professionnel de santé.</p>
+  </div>
+</footer>
+
+</body>
+</html>
