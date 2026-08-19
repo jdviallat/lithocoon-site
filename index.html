@@ -77,6 +77,12 @@
   .premium li{padding:5px 0 5px 30px;position:relative;font-size:15px}
   .premium li::before{content:"💎";position:absolute;left:0}
   .premium .free{color:var(--muted);font-size:14px;margin-top:20px}
+  .pay{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+  .paybtn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:800;
+    font-size:15px;text-decoration:none;color:#fff;transition:transform .15s,box-shadow .15s;box-shadow:0 6px 16px rgba(0,0,0,.16)}
+  .paybtn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.22)}
+  .paybtn.paypal{background:#0070ba}
+  .paybtn.sumup{background:#1b2a4a}
 
   /* Privacy strip */
   .privacy{background:var(--nuit);color:#E9E6F2;text-align:center}
@@ -175,7 +181,12 @@
         <li>Calendrier lunaire et rituels de purification</li>
       </ul>
       <p class="free">La version gratuite « Découverte » offre 56 pierres, l'oracle et l'assistant — pour explorer l'app en toute liberté.</p>
-      <p class="free" style="margin-top:14px">Sur <strong>Google&nbsp;Play</strong> et l'<strong>App&nbsp;Store</strong>, la version complète s'obtient par achat intégré. Pour l'<strong>APK téléchargé</strong> (hors store), elle se débloque avec une <strong>licence nominative</strong> — <a href="mailto:contact@bengacoon.com?subject=Licence%20Lithocoon" style="color:var(--or)">demandez la vôtre</a>.</p>
+      <p class="free" style="margin-top:14px">Sur <strong>Google&nbsp;Play</strong> et l'<strong>App&nbsp;Store</strong>, la version complète s'obtient par achat intégré. Pour l'<strong>APK téléchargé</strong> (hors store), payez ici et recevez votre <strong>licence nominative à vie</strong> par email :</p>
+      <div class="pay">
+        <a class="paybtn paypal" href="https://paypal.me/hypnocoon/7.90EUR">Payer avec PayPal · 7,90&nbsp;€</a>
+        <a class="paybtn sumup" href="https://pay.sumup.com/b2c/QJZVD5JC">Payer avec SumUp · 7,90&nbsp;€</a>
+      </div>
+      <p class="free" style="margin-top:12px;font-size:13px">Après paiement, vous recevez votre licence par email — vous la collez dans l'app (<em>Réglages → Version complète</em>), débloquée à vie et hors&#8209;ligne. Une question ? <a href="mailto:info@hypnocoon.com" style="color:var(--or)">info@hypnocoon.com</a></p>
     </div>
   </div>
 </section>
