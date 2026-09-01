@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lithocoon — Lithothérapie, pierres & rituels de bien-être</title>
-<meta name="description" content="Lithocoon, par Bengacoon : 136 pierres détaillées, un créateur de bracelets sur mesure, un calendrier lunaire et des rituels. Un guide de lithothérapie premium, 100 % hors ligne.">
+<meta name="description" content="Lithocoon, par Bengacoon : 140 pierres détaillées, un créateur de bracelets sur mesure, un calendrier lunaire et des rituels. Un guide de lithothérapie premium, 100 % hors ligne.">
 <link rel="icon" href="assets/favicon.png">
 <meta property="og:title" content="Lithocoon — Lithothérapie & pierres">
-<meta property="og:description" content="136 pierres illustrées, bracelets sur mesure, calendrier lunaire et journal de ressentis. Un compagnon de lithothérapie tout en justesse.">
+<meta property="og:description" content="140 pierres illustrées, bracelets sur mesure, calendrier lunaire et journal de ressentis. Un compagnon de lithothérapie tout en justesse.">
 <meta property="og:image" content="assets/icon.png">
 <style>
   :root{
@@ -30,9 +30,10 @@
   header img{width:36px;height:36px;border-radius:9px}
   header .brand{font-weight:800;font-size:19px;letter-spacing:.2px}
   header .brand small{display:block;font-weight:600;font-size:11px;color:var(--muted);letter-spacing:.3px}
-  header nav{margin-left:auto;display:flex;gap:20px;font-size:14px;font-weight:600;flex-wrap:wrap;justify-content:flex-end}
+  header nav{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600;flex-wrap:wrap;justify-content:flex-end}
   header nav a{color:var(--muted);text-decoration:none;white-space:nowrap}
   header nav a:hover{color:var(--nuit)}
+  .langsel{font:inherit;font-size:13px;font-weight:700;color:var(--nuit);background:#fff;border:1px solid var(--creme-2);border-radius:9px;padding:6px 8px;cursor:pointer}
   @media(max-width:640px){
     header .wrap{flex-direction:column;gap:8px;padding:10px 0;min-height:0}
     header .brand small{display:none}
@@ -105,11 +106,12 @@
   <div class="wrap">
     <a href="index.html" class="logo-link"><img src="assets/icon.png" alt="Lithocoon"><span class="brand">Lithocoon<small>par Bengacoon</small></span></a>
     <nav>
-      <a href="index.html">Accueil</a>
-      <a href="index.html#fonctions">Fonctions</a>
-      <a href="guide.html">Guide</a>
-      <a href="index.html#premium">Version complète</a>
-      <a href="privacy.html">Confidentialité</a>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="index.html#fonctions" data-i18n="nav.features">Fonctions</a>
+      <a href="guide.html" data-i18n="nav.guide">Guide</a>
+      <a href="index.html#premium" data-i18n="nav.premium">Version complète</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Confidentialité</a>
+      <select id="langSel" class="langsel" aria-label="Langue / Language"></select>
     </nav>
   </div>
 </header>
@@ -118,18 +120,18 @@
   <span class="gem g1"></span><span class="gem g2"></span>
   <div class="wrap">
     <img class="logo" src="assets/icon.png" alt="Lithocoon">
-    <div class="par">par Bengacoon</div>
+    <div class="par" data-i18n="hero.by">par Bengacoon</div>
     <h1>Lithocoon</h1>
-    <p class="lead">Votre compagnon de lithothérapie : un catalogue premium de pierres, des bracelets sur mesure et des rituels au fil de la lune. Élégant, complet et 100 % hors ligne.</p>
+    <p class="lead" data-i18n="hero.lead">Votre compagnon de lithothérapie : un catalogue premium de pierres, des bracelets sur mesure et des rituels au fil de la lune. Élégant, complet et 100 % hors ligne.</p>
     <div class="stores">
       <a class="store soon" href="#" aria-disabled="true">
-        <span class="em">▶</span><span><small>Bientôt sur</small>Google&nbsp;Play</span>
+        <span class="em">▶</span><span><small data-i18n="store.soon">Bientôt sur</small><span data-i18n="store.play">Google&nbsp;Play</span></span>
       </a>
       <a class="store soon" href="#">
-        <span class="em"></span><span><small>Bientôt sur</small>App&nbsp;Store</span>
+        <span class="em"></span><span><small data-i18n="store.soon2">Bientôt sur</small><span data-i18n="store.appstore">App&nbsp;Store</span></span>
       </a>
       <a class="store" href="https://github.com/jdviallat/lithocoon/releases/latest">
-        <span class="em">⬇</span><span><small>Télécharger l'APK</small>Android&nbsp;(.apk)</span>
+        <span class="em">⬇</span><span><small data-i18n="store.dl">Télécharger l'APK</small><span data-i18n="store.android">Android&nbsp;(.apk)</span></span>
       </a>
     </div>
   </div>
@@ -137,42 +139,42 @@
 
 <section id="fonctions">
   <div class="wrap">
-    <div class="eyebrow">Ce que fait l'app</div>
-    <h2>La lithothérapie, avec justesse</h2>
-    <p class="sub">Découvrir, composer et vivre les pierres au quotidien — sans compte, sans jargon.</p>
+    <div class="eyebrow" data-i18n="feat.eyebrow">Ce que fait l'app</div>
+    <h2 data-i18n="feat.h2">La lithothérapie, avec justesse</h2>
+    <p class="sub" data-i18n="feat.sub">Découvrir, composer et vivre les pierres au quotidien — sans compte, sans jargon.</p>
     <div class="grid">
       <div class="card">
-        <span class="em">💎</span><h3>136 pierres détaillées</h3>
-        <p>Minéralogie exacte, chakras, correspondances, origines, authenticité et contrefaçons. Chaque pierre a aussi son « côté ombre » : quand l'éviter, comment l'équilibrer.</p>
+        <span class="em">💎</span><h3 data-i18n="feat.stones.t">140 pierres détaillées</h3>
+        <p data-i18n="feat.stones.b">Minéralogie exacte, chakras, correspondances, origines, authenticité et contrefaçons. Chaque pierre a aussi son « côté ombre » : quand l'éviter, comment l'équilibrer.</p>
       </div>
       <div class="card">
-        <span class="em">🔮</span><h3>Collection Prestige</h3>
-        <p>24 pierres rares et spectaculaires — azurite, tourmalines pastèque, super seven, crocoïte… — illustrées et réservées à la version complète.</p>
+        <span class="em">🔮</span><h3 data-i18n="feat.prestige.t">Collection Prestige</h3>
+        <p data-i18n="feat.prestige.b">24 pierres rares et spectaculaires — azurite, tourmalines pastèque, super seven, crocoïte… — illustrées et réservées à la version complète.</p>
       </div>
       <div class="card">
-        <span class="em">💠</span><h3>Créez vos bracelets</h3>
-        <p>Un configurateur intelligent : taille des perles, composition équilibrée, analyse de synergie colorée. Enregistrez, ajoutez photo et notes, suivez l'entretien.</p>
+        <span class="em">💠</span><h3 data-i18n="feat.bracelets.t">Créez vos bracelets</h3>
+        <p data-i18n="feat.bracelets.b">Un configurateur intelligent : taille des perles, composition équilibrée, analyse de synergie colorée. Enregistrez, ajoutez photo et notes, suivez l'entretien.</p>
       </div>
       <div class="card">
-        <span class="em">🌙</span><h3>Calendrier lunaire & rituels</h3>
-        <p>Suivez les phases de la lune, sachez quand recharger vos pierres, et accordez-vous un rituel de purification guidé avec un minuteur apaisant.</p>
+        <span class="em">🌙</span><h3 data-i18n="feat.moon.t">Calendrier lunaire & rituels</h3>
+        <p data-i18n="feat.moon.b">Suivez les phases de la lune, sachez quand recharger vos pierres, et accordez-vous un rituel de purification guidé avec un minuteur apaisant.</p>
       </div>
       <div class="card">
-        <span class="em">📔</span><h3>Journal de ressentis</h3>
-        <p>Notez votre bien-être avant et après chaque séance et visualisez votre évolution au fil du temps, en toute intimité.</p>
+        <span class="em">📔</span><h3 data-i18n="feat.journal.t">Journal de ressentis</h3>
+        <p data-i18n="feat.journal.b">Notez votre bien-être avant et après chaque séance et visualisez votre évolution au fil du temps, en toute intimité.</p>
       </div>
       <div class="card">
-        <span class="em">🧭</span><h3>Oracle & assistant</h3>
-        <p>Une pierre du jour inspirante, et un assistant qui vous conseille la bonne pierre selon votre intention : apaisement, confiance, amour, énergie…</p>
+        <span class="em">🧭</span><h3 data-i18n="feat.oracle.t">Oracle & assistant</h3>
+        <p data-i18n="feat.oracle.b">Une pierre du jour inspirante, et un assistant qui vous conseille la bonne pierre selon votre intention : apaisement, confiance, amour, énergie…</p>
       </div>
       <div class="card">
-        <span class="em">❤️</span><h3>Favoris & chakras</h3>
-        <p>Marquez vos pierres préférées d'un cœur et retrouvez-les d'un geste. Explorez aussi le catalogue par les 7 chakras, chacun avec ses pierres et sa couleur.</p>
+        <span class="em">❤️</span><h3 data-i18n="feat.fav.t">Favoris & chakras</h3>
+        <p data-i18n="feat.fav.b">Marquez vos pierres préférées d'un cœur et retrouvez-les d'un geste. Explorez aussi le catalogue par les 7 chakras, chacun avec ses pierres et sa couleur.</p>
       </div>
     </div>
     <p style="text-align:center;margin-top:34px">
       <a href="guide.html" class="store" style="background:var(--nuit);color:#fff;box-shadow:0 6px 18px rgba(46,42,71,.20)">
-        <span class="em">📖</span><span><small style="opacity:.7">Comment ça marche</small>Guide d'utilisation</span>
+        <span class="em">📖</span><span><small style="opacity:.7" data-i18n="feat.guidebtn.small">Comment ça marche</small><span data-i18n="feat.guidebtn">Guide d'utilisation</span></span>
       </a>
     </p>
   </div>
@@ -181,41 +183,42 @@
 <section id="premium" class="premium">
   <div class="wrap">
     <div class="box">
-      <span class="price">Achat unique · 7,90 €</span>
-      <h2>La version complète, sans abonnement</h2>
-      <p class="sub" style="margin-bottom:6px">Débloquez toute la richesse de Lithocoon d'un seul achat, à vie.</p>
+      <span class="price" data-i18n="prem.price">Achat unique · 7,90 €</span>
+      <h2 data-i18n="prem.h2">La version complète, sans abonnement</h2>
+      <p class="sub" style="margin-bottom:6px" data-i18n="prem.sub">Débloquez toute la richesse de Lithocoon d'un seul achat, à vie.</p>
       <ul>
-        <li>Les 136 pierres, dont la Collection Prestige</li>
-        <li>Création et enregistrement de bracelets</li>
-        <li>Journal de ressentis et courbe d'évolution</li>
-        <li>Calendrier lunaire et rituels de purification</li>
+        <li data-i18n="prem.li1">Les 140 pierres, dont la Collection Prestige</li>
+        <li data-i18n="prem.li2">Création et enregistrement de bracelets</li>
+        <li data-i18n="prem.li3">Journal de ressentis et courbe d'évolution</li>
+        <li data-i18n="prem.li4">Calendrier lunaire et rituels de purification</li>
       </ul>
-      <p class="free">La version gratuite « Découverte » offre 56 pierres, l'oracle et l'assistant — pour explorer l'app en toute liberté.</p>
-      <p class="free" style="margin-top:14px">Sur <strong>Google&nbsp;Play</strong> et l'<strong>App&nbsp;Store</strong>, la version complète s'obtient par achat intégré. Pour l'<strong>APK téléchargé</strong> (hors store), payez ici et recevez votre <strong>licence nominative à vie</strong> par email :</p>
+      <p class="free" data-i18n="prem.free1">La version gratuite « Découverte » offre 56 pierres, l'oracle et l'assistant — pour explorer l'app en toute liberté.</p>
+      <p class="free" style="margin-top:14px" data-i18n-html="prem.free2">Sur <strong>Google&nbsp;Play</strong> et l'<strong>App&nbsp;Store</strong>, la version complète s'obtient par achat intégré. Pour l'<strong>APK téléchargé</strong> (hors store), payez ici et recevez votre <strong>licence nominative à vie</strong> par email :</p>
       <div class="pay">
-        <a class="paybtn paypal" href="https://paypal.me/hypnocoon/7.90EUR">Payer avec PayPal · 7,90&nbsp;€</a>
-        <a class="paybtn sumup" href="https://pay.sumup.com/b2c/QJZVD5JC">Payer avec SumUp · 7,90&nbsp;€</a>
+        <a class="paybtn paypal" href="https://paypal.me/hypnocoon/7.90EUR" data-i18n="prem.paypal">Payer avec PayPal · 7,90&nbsp;€</a>
+        <a class="paybtn sumup" href="https://pay.sumup.com/b2c/QJZVD5JC" data-i18n="prem.sumup">Payer avec SumUp · 7,90&nbsp;€</a>
       </div>
-      <p class="free" style="margin-top:12px;font-size:13px">Après paiement, vous recevez votre licence par email — vous la collez dans l'app (<em>Réglages → Version complète</em>), débloquée à vie et hors&#8209;ligne. Une question ? <a href="mailto:info@hypnocoon.com" style="color:var(--or)">info@hypnocoon.com</a></p>
+      <p class="free" style="margin-top:12px;font-size:13px" data-i18n-html="prem.free3">Après paiement, vous recevez votre licence par email — vous la collez dans l'app (<em>Réglages → Version complète</em>), débloquée à vie et hors&#8209;ligne. Une question ? <a href="mailto:info@hypnocoon.com" style="color:var(--or)">info@hypnocoon.com</a></p>
     </div>
   </div>
 </section>
 
 <section id="confidentialite" class="privacy">
   <div class="wrap">
-    <div class="eyebrow" style="color:var(--or-clair)">Vos données, chez vous</div>
-    <h2>Rien ne quitte votre téléphone</h2>
-    <p class="sub">Aucune donnée personnelle envoyée sur Internet, aucun compte à créer. Verrouillage par code ou empreinte, et 9 langues disponibles.</p>
+    <div class="eyebrow" style="color:var(--or-clair)" data-i18n="priv.eyebrow">Vos données, chez vous</div>
+    <h2 data-i18n="priv.h2">Rien ne quitte votre téléphone</h2>
+    <p class="sub" data-i18n="priv.sub">Aucune donnée personnelle envoyée sur Internet, aucun compte à créer. Verrouillage par code ou empreinte, et 9 langues disponibles.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <strong>Lithocoon</strong> — par Bengacoon · Disponible en 9 langues<br>
-    <a href="privacy.html">Politique de confidentialité</a> &nbsp;·&nbsp; © 2026 Bengacoon
-    <p class="disc">Lithocoon est une application de bien-être. La lithothérapie est présentée comme une tradition de bien-être : elle n'établit aucun diagnostic, ne constitue pas un traitement et ne remplace pas l'avis d'un professionnel de santé.</p>
+    <span data-i18n-html="foot.brand"><strong>Lithocoon</strong> — par Bengacoon · Disponible en 9 langues</span><br>
+    <a href="privacy.html" data-i18n="foot.policy">Politique de confidentialité</a> &nbsp;·&nbsp; <span data-i18n="foot.copy">© 2026 Bengacoon</span>
+    <p class="disc" data-i18n="foot.disc">Lithocoon est une application de bien-être. La lithothérapie est présentée comme une tradition de bien-être : elle n'établit aucun diagnostic, ne constitue pas un traitement et ne remplace pas l'avis d'un professionnel de santé.</p>
   </div>
 </footer>
 
+<script src="i18n.js" defer></script>
 </body>
 </html>

@@ -17,9 +17,10 @@
   header img{width:36px;height:36px;border-radius:9px}
   header .brand{font-weight:800;font-size:19px;letter-spacing:.2px}
   header .brand small{display:block;font-weight:600;font-size:11px;color:var(--muted);letter-spacing:.3px}
-  header nav{margin-left:auto;display:flex;gap:20px;font-size:14px;font-weight:600;flex-wrap:wrap;justify-content:flex-end}
+  header nav{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600;flex-wrap:wrap;justify-content:flex-end}
   header nav a{color:var(--muted);text-decoration:none;white-space:nowrap}
   header nav a:hover{color:var(--nuit)}
+  .langsel{font:inherit;font-size:13px;font-weight:700;color:var(--nuit);background:#fff;border:1px solid var(--creme-2);border-radius:9px;padding:6px 8px;cursor:pointer}
   @media(max-width:640px){
     header .wrap{flex-direction:column;gap:8px;padding:10px 0;min-height:0}
     header .brand small{display:none}
@@ -41,49 +42,51 @@
   <div class="wrap">
     <a href="index.html" class="logo-link"><img src="assets/icon.png" alt="Lithocoon"><span class="brand">Lithocoon<small>par Bengacoon</small></span></a>
     <nav>
-      <a href="index.html">Accueil</a>
-      <a href="index.html#fonctions">Fonctions</a>
-      <a href="guide.html">Guide</a>
-      <a href="index.html#premium">Version complète</a>
-      <a href="privacy.html">Confidentialité</a>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="index.html#fonctions" data-i18n="nav.features">Fonctions</a>
+      <a href="guide.html" data-i18n="nav.guide">Guide</a>
+      <a href="index.html#premium" data-i18n="nav.premium">Version complète</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Confidentialité</a>
+      <select id="langSel" class="langsel" aria-label="Langue / Language"></select>
     </nav>
   </div>
 </header>
 <main>
   <div class="wrap">
-    <h1>Politique de confidentialité</h1>
-    <p class="maj">Éditeur : Bengacoon — Julien Diallat · Contact : jdviallat@gmail.com · Mise à jour : juillet 2026</p>
+    <h1 data-i18n="priv2.title">Politique de confidentialité</h1>
+    <p class="maj" data-i18n="priv2.maj">Éditeur : Bengacoon — Julien Diallat · Contact : jdviallat@gmail.com · Mise à jour : juillet 2026</p>
 
-    <div class="note"><strong>En résumé :</strong> aucune donnée personnelle n'est collectée ni transmise. Tout reste sur votre appareil. Aucun compte, aucune publicité, aucun traceur.</div>
+    <div class="note" data-i18n-html="priv2.note"><strong>En résumé :</strong> aucune donnée personnelle n'est collectée ni transmise. Tout reste sur votre appareil. Aucun compte, aucune publicité, aucun traceur.</div>
 
-    <h2>Données traitées, uniquement en local</h2>
-    <p>Les informations suivantes sont enregistrées <strong>uniquement dans le stockage privé de votre appareil</strong> et ne sont jamais envoyées à un serveur :</p>
+    <h2 data-i18n="priv2.h_local">Données traitées, uniquement en local</h2>
+    <p data-i18n-html="priv2.local_intro">Les informations suivantes sont enregistrées <strong>uniquement dans le stockage privé de votre appareil</strong> et ne sont jamais envoyées à un serveur :</p>
     <ul>
-      <li>Les bracelets que vous créez ou enregistrez, leurs notes et photos éventuelles.</li>
-      <li>Le journal de ressentis (états avant/après, notes) — version complète.</li>
-      <li>Vos réglages (langue, thème, taille du texte, sons, notifications, mode thérapeute).</li>
-      <li>Un éventuel code PIN de verrouillage (stocké de façon chiffrée sur l'appareil).</li>
+      <li data-i18n="priv2.li_a">Les bracelets que vous créez ou enregistrez, leurs notes et photos éventuelles.</li>
+      <li data-i18n="priv2.li_b">Le journal de ressentis (états avant/après, notes) — version complète.</li>
+      <li data-i18n="priv2.li_c">Vos réglages (langue, thème, taille du texte, sons, notifications, mode thérapeute).</li>
+      <li data-i18n="priv2.li_d">Un éventuel code PIN de verrouillage (stocké de façon chiffrée sur l'appareil).</li>
     </ul>
-    <p>Vous pouvez supprimer ces données à tout moment depuis l'application, ou en la désinstallant.</p>
+    <p data-i18n="priv2.local_del">Vous pouvez supprimer ces données à tout moment depuis l'application, ou en la désinstallant.</p>
 
-    <h2>Autorisations et leur usage</h2>
+    <h2 data-i18n="priv2.h_perms">Autorisations et leur usage</h2>
     <ul>
-      <li><strong>Appareil photo / images</strong> : uniquement pour ajouter une photo à un bracelet. Les photos restent sur l'appareil.</li>
-      <li><strong>Notifications</strong> : « pierre du jour » et rappel de pleine lune, si vous les activez — générées localement, sans serveur.</li>
-      <li><strong>Internet</strong> : uniquement pour vérifier les mises à jour, ouvrir la boutique si vous le demandez, et traiter l'achat via le store. Aucune donnée personnelle n'est transmise par l'application.</li>
-      <li><strong>Empreinte / biométrie</strong> : uniquement pour déverrouiller l'app si vous l'activez ; gérée par le système, jamais lue par l'app.</li>
+      <li data-i18n-html="priv2.perm_photo"><strong>Appareil photo / images</strong> : uniquement pour ajouter une photo à un bracelet. Les photos restent sur l'appareil.</li>
+      <li data-i18n-html="priv2.perm_notif"><strong>Notifications</strong> : « pierre du jour » et rappel de pleine lune, si vous les activez — générées localement, sans serveur.</li>
+      <li data-i18n-html="priv2.perm_net"><strong>Internet</strong> : uniquement pour vérifier les mises à jour, ouvrir la boutique si vous le demandez, et traiter l'achat via le store. Aucune donnée personnelle n'est transmise par l'application.</li>
+      <li data-i18n-html="priv2.perm_bio"><strong>Empreinte / biométrie</strong> : uniquement pour déverrouiller l'app si vous l'activez ; gérée par le système, jamais lue par l'app.</li>
     </ul>
 
-    <h2>Achats</h2>
-    <p>La version complète se débloque par un <strong>achat intégré unique (7,90 €)</strong> traité par le store (Google Play, App Store) selon sa propre politique de confidentialité. L'application ne reçoit ni ne stocke vos informations de paiement.</p>
+    <h2 data-i18n="priv2.h_buy">Achats</h2>
+    <p data-i18n-html="priv2.buy">La version complète se débloque par un <strong>achat intégré unique (7,90 €)</strong> traité par le store (Google Play, App Store) selon sa propre politique de confidentialité. L'application ne reçoit ni ne stocke vos informations de paiement.</p>
 
-    <h2>Vos droits (RGPD / nLPD)</h2>
-    <p>Aucune donnée personnelle n'étant collectée par l'éditeur, il n'y a pas de traitement à distance vous concernant. Les données locales sont sous votre contrôle exclusif. Pour toute question : jdviallat@gmail.com.</p>
+    <h2 data-i18n="priv2.h_rights">Vos droits (RGPD / nLPD)</h2>
+    <p data-i18n="priv2.rights">Aucune donnée personnelle n'étant collectée par l'éditeur, il n'y a pas de traitement à distance vous concernant. Les données locales sont sous votre contrôle exclusif. Pour toute question : jdviallat@gmail.com.</p>
 
-    <h2>Avertissement</h2>
-    <p>La lithothérapie est présentée comme une <strong>tradition de bien-être</strong>. L'application ne fournit aucun conseil médical et ne remplace pas l'avis d'un professionnel de santé.</p>
+    <h2 data-i18n="priv2.h_warn">Avertissement</h2>
+    <p data-i18n-html="priv2.warn">La lithothérapie est présentée comme une <strong>tradition de bien-être</strong>. L'application ne fournit aucun conseil médical et ne remplace pas l'avis d'un professionnel de santé.</p>
   </div>
 </main>
-<footer>© 2026 Bengacoon · <a href="index.html">Lithocoon</a></footer>
+<footer><span data-i18n-html="priv2.foot">© 2026 Bengacoon · <a href="index.html">Lithocoon</a></span></footer>
+<script src="i18n.js" defer></script>
 </body>
 </html>

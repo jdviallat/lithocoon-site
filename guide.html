@@ -23,9 +23,10 @@
   header img{width:36px;height:36px;border-radius:9px}
   header .brand{font-weight:800;font-size:19px;letter-spacing:.2px}
   header .brand small{display:block;font-weight:600;font-size:11px;color:var(--muted);letter-spacing:.3px}
-  header nav{margin-left:auto;display:flex;gap:20px;font-size:14px;font-weight:600;flex-wrap:wrap;justify-content:flex-end}
+  header nav{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600;flex-wrap:wrap;justify-content:flex-end}
   header nav a{color:var(--muted);text-decoration:none;white-space:nowrap}
   header nav a:hover{color:var(--nuit)}
+  .langsel{font:inherit;font-size:13px;font-weight:700;color:var(--nuit);background:#fff;border:1px solid var(--creme-2);border-radius:9px;padding:6px 8px;cursor:pointer}
   @media(max-width:640px){
     header .wrap{flex-direction:column;gap:8px;padding:10px 0;min-height:0}
     header .brand small{display:none}
@@ -77,39 +78,40 @@
   <div class="wrap">
     <a href="index.html" class="logo-link"><img src="assets/icon.png" alt="Lithocoon"><span class="brand">Lithocoon<small>par Bengacoon</small></span></a>
     <nav>
-      <a href="index.html">Accueil</a>
-      <a href="index.html#fonctions">Fonctions</a>
-      <a href="guide.html">Guide</a>
-      <a href="index.html#premium">Version complète</a>
-      <a href="privacy.html">Confidentialité</a>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="index.html#fonctions" data-i18n="nav.features">Fonctions</a>
+      <a href="guide.html" data-i18n="nav.guide">Guide</a>
+      <a href="index.html#premium" data-i18n="nav.premium">Version complète</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Confidentialité</a>
+      <select id="langSel" class="langsel" aria-label="Langue / Language"></select>
     </nav>
   </div>
 </header>
 
 <div class="top">
   <div class="wrap">
-    <div class="par">Guide d'utilisation</div>
-    <h1>Tout ce que vous pouvez faire</h1>
-    <p>Un tour complet de Lithocoon, écran par écran : découvrir les pierres, composer des bracelets, disposer vos pierres chez vous, suivre vos ressentis et entretenir vos minéraux.</p>
+    <div class="par" data-i18n="g.hero.par">Guide d'utilisation</div>
+    <h1 data-i18n="g.hero.h1">Tout ce que vous pouvez faire</h1>
+    <p data-i18n="g.hero.p">Un tour complet de Lithocoon, écran par écran : découvrir les pierres, composer des bracelets, disposer vos pierres chez vous, suivre vos ressentis et entretenir vos minéraux.</p>
   </div>
 </div>
 
 <div class="wrap">
   <nav class="toc">
-    <h2>Sommaire</h2>
+    <h2 data-i18n="g.toc.title">Sommaire</h2>
     <ol>
-      <li><a href="#accueil">Accueil & pierre du jour</a></li>
-      <li><a href="#biblio">La bibliothèque des pierres</a></li>
-      <li><a href="#chakras">Explorer par chakra</a></li>
-      <li><a href="#assistant">L'assistant (humeur / besoin)</a></li>
-      <li><a href="#creer">Créer un bracelet</a></li>
-      <li><a href="#pierres">Mes pierres (chez soi)</a></li>
-      <li><a href="#bracelets">Mes bracelets & journal de port</a></li>
-      <li><a href="#entretien">Purification, rechargement & rappels</a></li>
-      <li><a href="#therapeute">Mode thérapeute</a></li>
-      <li><a href="#reglages">Réglages & accès</a></li>
-      <li><a href="#maj">Mises à jour & licence</a></li>
-      <li><a href="#confid">Confidentialité</a></li>
+      <li><a href="#accueil" data-i18n="g.toc.1">Accueil & pierre du jour</a></li>
+      <li><a href="#biblio" data-i18n="g.toc.2">La bibliothèque des pierres</a></li>
+      <li><a href="#chakras" data-i18n="g.toc.3">Explorer par chakra</a></li>
+      <li><a href="#assistant" data-i18n="g.toc.4">L'assistant (humeur / besoin)</a></li>
+      <li><a href="#creer" data-i18n="g.toc.5">Créer un bracelet</a></li>
+      <li><a href="#pierres" data-i18n="g.toc.6">Mes pierres (chez soi)</a></li>
+      <li><a href="#bracelets" data-i18n="g.toc.7">Mes bracelets & journal de port</a></li>
+      <li><a href="#entretien" data-i18n="g.toc.8">Purification, rechargement & rappels</a></li>
+      <li><a href="#therapeute" data-i18n="g.toc.9">Mode thérapeute</a></li>
+      <li><a href="#reglages" data-i18n="g.toc.10">Réglages & accès</a></li>
+      <li><a href="#maj" data-i18n="g.toc.11">Mises à jour & licence</a></li>
+      <li><a href="#confid" data-i18n="g.toc.12">Confidentialité</a></li>
     </ol>
   </nav>
 </div>
@@ -118,204 +120,204 @@
 
 <section class="doc" id="accueil">
   <div class="wrap">
-    <div class="eyebrow">Écran d'accueil</div>
-    <h2 class="t"><span class="lead-em">🏠</span>Accueil & pierre du jour</h2>
-    <p>Le point de départ : une <b>pierre du jour</b> inspirante et des accès rapides vers la bibliothèque, les bracelets et les chakras.</p>
+    <div class="eyebrow" data-i18n="g.accueil.eyebrow">Écran d'accueil</div>
+    <h2 class="t"><span class="lead-em">🏠</span><span data-i18n="g.accueil.t">Accueil & pierre du jour</span></h2>
+    <p data-i18n-html="g.accueil.p">Le point de départ : une <b>pierre du jour</b> inspirante et des accès rapides vers la bibliothèque, les bracelets et les chakras.</p>
     <ul class="pts">
-      <li>Touchez la <b>pierre du jour</b> pour ouvrir sa fiche complète.</li>
-      <li>Utilisez les cartes « Explorer » pour aller à la bibliothèque, aux bracelets ou aux chakras.</li>
-      <li>La roue ⚙️ en haut à droite ouvre les <b>Réglages</b>.</li>
+      <li data-i18n-html="g.accueil.b1">Touchez la <b>pierre du jour</b> pour ouvrir sa fiche complète.</li>
+      <li data-i18n-html="g.accueil.b2">Utilisez les cartes « Explorer » pour aller à la bibliothèque, aux bracelets ou aux chakras.</li>
+      <li data-i18n-html="g.accueil.b3">La roue ⚙️ en haut à droite ouvre les <b>Réglages</b>.</li>
     </ul>
-    <a class="back" href="#">↑ Sommaire</a>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
 <section class="doc" id="biblio">
   <div class="wrap">
-    <div class="eyebrow">Onglet Pierres</div>
-    <h2 class="t"><span class="lead-em">💎</span>La bibliothèque des pierres</h2>
-    <p>140 pierres détaillées : minéralogie, chakras, correspondances, origines, authenticité, « côté ombre » et entretien.</p>
-    <h3>Comment chercher et filtrer</h3>
+    <div class="eyebrow" data-i18n="g.biblio.eyebrow">Onglet Pierres</div>
+    <h2 class="t"><span class="lead-em">💎</span><span data-i18n="g.biblio.t">La bibliothèque des pierres</span></h2>
+    <p data-i18n="g.biblio.p">140 pierres détaillées : minéralogie, chakras, correspondances, origines, authenticité, « côté ombre » et entretien.</p>
+    <h3 data-i18n="g.biblio.h1">Comment chercher et filtrer</h3>
     <ol class="steps">
-      <li>Ouvrez l'onglet <b>Pierres</b>.</li>
-      <li>Touchez la barre de <b>filtres</b> (Couleur, Chakra, Fonction, Favoris, Prestige) : elle se déplie pour montrer les options, et se replie pour rester compacte.</li>
-      <li>Combinez les filtres pour affiner ; le bouton <b>Réinitialiser</b> efface tout.</li>
-      <li>Basculez l'<b>affichage</b> entre grille (visuels) et liste (compacte) d'un geste.</li>
+      <li data-i18n-html="g.biblio.s1">Ouvrez l'onglet <b>Pierres</b>.</li>
+      <li data-i18n-html="g.biblio.s2">Touchez la barre de <b>filtres</b> (Couleur, Chakra, Fonction, Favoris, Prestige) : elle se déplie pour montrer les options, et se replie pour rester compacte.</li>
+      <li data-i18n-html="g.biblio.s3">Combinez les filtres pour affiner ; le bouton <b>Réinitialiser</b> efface tout.</li>
+      <li data-i18n-html="g.biblio.s4">Basculez l'<b>affichage</b> entre grille (visuels) et liste (compacte) d'un geste.</li>
     </ol>
-    <h3>Dans une fiche pierre</h3>
+    <h3 data-i18n="g.biblio.h2">Dans une fiche pierre</h3>
     <ul class="pts">
-      <li>Bienfaits traditionnels, chakras, polarité et <b>poignet conseillé</b> si vous la portez.</li>
-      <li>Le <b>« côté ombre »</b> : quand l'éviter, comment l'équilibrer.</li>
-      <li>Entretien : méthodes de <b>purification</b> et de <b>rechargement</b> conseillées / déconseillées.</li>
-      <li>Marquez la pierre en <b>favori</b> d'un cœur pour la retrouver via le filtre Favoris.</li>
+      <li data-i18n-html="g.biblio.b1">Bienfaits traditionnels, chakras, polarité et <b>poignet conseillé</b> si vous la portez.</li>
+      <li data-i18n-html="g.biblio.b2">Le <b>« côté ombre »</b> : quand l'éviter, comment l'équilibrer.</li>
+      <li data-i18n-html="g.biblio.b3">Entretien : méthodes de <b>purification</b> et de <b>rechargement</b> conseillées / déconseillées.</li>
+      <li data-i18n-html="g.biblio.b4">Marquez la pierre en <b>favori</b> d'un cœur pour la retrouver via le filtre Favoris.</li>
     </ul>
-    <a class="back" href="#">↑ Sommaire</a>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
 <section class="doc" id="chakras">
   <div class="wrap">
-    <div class="eyebrow">Onglet Pierres → Chakras</div>
-    <h2 class="t"><span class="lead-em">🌈</span>Explorer par chakra</h2>
-    <p>Parcourez le catalogue par les 7 centres d'énergie, chacun avec sa couleur et ses pierres.</p>
+    <div class="eyebrow" data-i18n="g.chakras.eyebrow">Onglet Pierres → Chakras</div>
+    <h2 class="t"><span class="lead-em">🌈</span><span data-i18n="g.chakras.t">Explorer par chakra</span></h2>
+    <p data-i18n="g.chakras.p">Parcourez le catalogue par les 7 centres d'énergie, chacun avec sa couleur et ses pierres.</p>
     <ol class="steps">
-      <li>Ouvrez l'écran <b>Les chakras</b>.</li>
-      <li>Choisissez un chakra pour voir les pierres qui lui sont associées.</li>
-      <li>Touchez une pierre pour ouvrir sa fiche.</li>
+      <li data-i18n-html="g.chakras.s1">Ouvrez l'écran <b>Les chakras</b>.</li>
+      <li data-i18n="g.chakras.s2">Choisissez un chakra pour voir les pierres qui lui sont associées.</li>
+      <li data-i18n="g.chakras.s3">Touchez une pierre pour ouvrir sa fiche.</li>
     </ol>
-    <a class="back" href="#">↑ Sommaire</a>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
 <section class="doc" id="assistant">
   <div class="wrap">
-    <div class="eyebrow">Onglet Assistant</div>
-    <h2 class="t"><span class="lead-em">✨</span>L'assistant : la bonne pierre selon vous</h2>
-    <p>Trois méthodes, une seule dépliée à la fois, pour un écran clair. Les pierres conseillées s'affichent au fur et à mesure de vos choix.</p>
-    <h3>Humeur du jour</h3>
-    <p>Sélectionnez votre humeur : l'assistant propose un message et des pierres adaptées.</p>
-    <h3>Votre besoin</h3>
-    <p>Apaisement, sommeil, confiance, amour, énergie, concentration, protection, intuition, créativité… un appui suffit.</p>
-    <h3>Questionnaire (court ou complet)</h3>
-    <p>Répondez à quelques questions pour une recommandation plus fine ; filtrez ensuite par chakra si besoin.</p>
-    <div class="tip"><b>Nouveau :</b> dès que vous choisissez un besoin ou une humeur, l'assistant vous montre aussi, s'il y en a, <b>vos propres bracelets</b> (dans « Mes bracelets ») qui correspondent, avec les fonctions qu'ils couvrent.</div>
-    <a class="back" href="#">↑ Sommaire</a>
+    <div class="eyebrow" data-i18n="g.assistant.eyebrow">Onglet Assistant</div>
+    <h2 class="t"><span class="lead-em">✨</span><span data-i18n="g.assistant.t">L'assistant : la bonne pierre selon vous</span></h2>
+    <p data-i18n="g.assistant.p">Trois méthodes, une seule dépliée à la fois, pour un écran clair. Les pierres conseillées s'affichent au fur et à mesure de vos choix.</p>
+    <h3 data-i18n="g.assistant.h1">Humeur du jour</h3>
+    <p data-i18n="g.assistant.p1">Sélectionnez votre humeur : l'assistant propose un message et des pierres adaptées.</p>
+    <h3 data-i18n="g.assistant.h2">Votre besoin</h3>
+    <p data-i18n="g.assistant.p2">Apaisement, sommeil, confiance, amour, énergie, concentration, protection, intuition, créativité… un appui suffit.</p>
+    <h3 data-i18n="g.assistant.h3">Questionnaire (court ou complet)</h3>
+    <p data-i18n="g.assistant.p3">Répondez à quelques questions pour une recommandation plus fine ; filtrez ensuite par chakra si besoin.</p>
+    <div class="tip" data-i18n-html="g.assistant.tip"><b>Nouveau :</b> dès que vous choisissez un besoin ou une humeur, l'assistant vous montre aussi, s'il y en a, <b>vos propres bracelets</b> (dans « Mes bracelets ») qui correspondent, avec les fonctions qu'ils couvrent.</div>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
 <section class="doc" id="creer">
   <div class="wrap">
-    <div class="eyebrow">Onglet Créer</div>
-    <h2 class="t"><span class="lead-em">💠</span>Créer un bracelet sur mesure</h2>
-    <p>Un configurateur qui compose un bracelet équilibré et en mesure la synergie.</p>
+    <div class="eyebrow" data-i18n="g.creer.eyebrow">Onglet Créer</div>
+    <h2 class="t"><span class="lead-em">💠</span><span data-i18n="g.creer.t">Créer un bracelet sur mesure</span></h2>
+    <p data-i18n="g.creer.p">Un configurateur qui compose un bracelet équilibré et en mesure la synergie.</p>
     <ol class="steps">
-      <li>Ajoutez des pierres et ajustez la <b>taille des perles</b> et les quantités.</li>
-      <li>Consultez la <b>synergie</b> (4 axes colorés) et l'énergie de la composition.</li>
-      <li>Touchez <b>« Ratio idéal »</b> pour rééquilibrer les proportions <b>sans changer le nombre total de perles</b> (la taille du bracelet reste la même).</li>
-      <li>Ajoutez une <b>photo</b> (galerie ou appareil), et laissez l'app <b>suggérer un nom</b> évocateur si vous le souhaitez.</li>
-      <li>Enregistrez : le bracelet part dans « Mes bracelets » (le configurateur se remet à zéro pour le suivant).</li>
+      <li data-i18n-html="g.creer.s1">Ajoutez des pierres et ajustez la <b>taille des perles</b> et les quantités.</li>
+      <li data-i18n-html="g.creer.s2">Consultez la <b>synergie</b> (4 axes colorés) et l'énergie de la composition.</li>
+      <li data-i18n-html="g.creer.s3">Touchez <b>« Ratio idéal »</b> pour rééquilibrer les proportions <b>sans changer le nombre total de perles</b> (la taille du bracelet reste la même).</li>
+      <li data-i18n-html="g.creer.s4">Ajoutez une <b>photo</b> (galerie ou appareil), et laissez l'app <b>suggérer un nom</b> évocateur si vous le souhaitez.</li>
+      <li data-i18n-html="g.creer.s5">Enregistrez : le bracelet part dans « Mes bracelets » (le configurateur se remet à zéro pour le suivant).</li>
     </ol>
-    <div class="tip">En <b>mode thérapeute</b>, vous pouvez attribuer le bracelet à un <b>client</b> (nom + prénom) et cocher le <b>décompte automatique</b> des perles depuis votre stock — seules les perles disponibles sont utilisées.</div>
-    <a class="back" href="#">↑ Sommaire</a>
+    <div class="tip" data-i18n-html="g.creer.tip">En <b>mode thérapeute</b>, vous pouvez attribuer le bracelet à un <b>client</b> (nom + prénom) et cocher le <b>décompte automatique</b> des perles depuis votre stock — seules les perles disponibles sont utilisées.</div>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
 <section class="doc" id="pierres">
   <div class="wrap">
-    <div class="eyebrow">Onglet Mes pierres</div>
-    <h2 class="t"><span class="lead-em">🏡</span>Mes pierres : les disposer chez soi</h2>
-    <p>« Mes pierres » regroupe vos pierres d'ambiance — celles que l'on <b>pose dans la maison</b> plutôt que de porter au poignet.</p>
-    <h3>Ajouter une pierre</h3>
+    <div class="eyebrow" data-i18n="g.pierres.eyebrow">Onglet Mes pierres</div>
+    <h2 class="t"><span class="lead-em">🏡</span><span data-i18n="g.pierres.t">Mes pierres : les disposer chez soi</span></h2>
+    <p data-i18n-html="g.pierres.p">« Mes pierres » regroupe vos pierres d'ambiance — celles que l'on <b>pose dans la maison</b> plutôt que de porter au poignet.</p>
+    <h3 data-i18n="g.pierres.h1">Ajouter une pierre</h3>
     <ol class="steps">
-      <li>Ouvrez <b>Mes pierres</b> et touchez <b>Ajouter</b>.</li>
-      <li>Donnez-lui un nom, reliez-la (facultatif) à une pierre du catalogue, ajoutez une <b>photo</b> ou prenez-la en photo.</li>
+      <li data-i18n-html="g.pierres.s1">Ouvrez <b>Mes pierres</b> et touchez <b>Ajouter</b>.</li>
+      <li data-i18n-html="g.pierres.s2">Donnez-lui un nom, reliez-la (facultatif) à une pierre du catalogue, ajoutez une <b>photo</b> ou prenez-la en photo.</li>
     </ol>
-    <h3>Sur la fiche de votre pierre</h3>
+    <h3 data-i18n="g.pierres.h2">Sur la fiche de votre pierre</h3>
     <ul class="pts">
-      <li><b>Où la placer dans la maison</b> et <b>pourquoi</b> (ex. protection → près de l'entrée ; apaisement → chambre ; abondance → séjour/bureau).</li>
-      <li><b>Où éviter de la placer</b> et pourquoi (pierre sensible à l'humidité → éviter la salle de bain ; pierre très dynamisante → éviter la chambre).</li>
-      <li><b>Purification & rechargement</b> conseillés pour cette pierre.</li>
-      <li><b>Compatibilités</b> : quelles pierres associer / éviter si vous en disposez plusieurs ensemble.</li>
-      <li>Boutons <b>« J'ai purifié / rechargé »</b> et <b>planification</b> d'un rappel.</li>
-      <li>Ajoutez vos <b>notes</b>, agrandissez la photo d'un geste.</li>
+      <li data-i18n-html="g.pierres.b1"><b>Où la placer dans la maison</b> et <b>pourquoi</b> (ex. protection → près de l'entrée ; apaisement → chambre ; abondance → séjour/bureau).</li>
+      <li data-i18n-html="g.pierres.b2"><b>Où éviter de la placer</b> et pourquoi (pierre sensible à l'humidité → éviter la salle de bain ; pierre très dynamisante → éviter la chambre).</li>
+      <li data-i18n-html="g.pierres.b3"><b>Purification & rechargement</b> conseillés pour cette pierre.</li>
+      <li data-i18n-html="g.pierres.b4"><b>Compatibilités</b> : quelles pierres associer / éviter si vous en disposez plusieurs ensemble.</li>
+      <li data-i18n-html="g.pierres.b5">Boutons <b>« J'ai purifié / rechargé »</b> et <b>planification</b> d'un rappel.</li>
+      <li data-i18n-html="g.pierres.b6">Ajoutez vos <b>notes</b>, agrandissez la photo d'un geste.</li>
     </ul>
-    <a class="back" href="#">↑ Sommaire</a>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
 <section class="doc" id="bracelets">
   <div class="wrap">
-    <div class="eyebrow">Onglet Mes pierres → Mes bracelets</div>
-    <h2 class="t"><span class="lead-em">📿</span>Mes bracelets & journal de port</h2>
-    <p>Retrouvez vos bracelets créés ou ajoutés, et suivez leurs effets dans le temps.</p>
-    <h3>Le journal de port</h3>
+    <div class="eyebrow" data-i18n="g.bracelets.eyebrow">Onglet Mes pierres → Mes bracelets</div>
+    <h2 class="t"><span class="lead-em">📿</span><span data-i18n="g.bracelets.t">Mes bracelets & journal de port</span></h2>
+    <p data-i18n="g.bracelets.p">Retrouvez vos bracelets créés ou ajoutés, et suivez leurs effets dans le temps.</p>
+    <h3 data-i18n="g.bracelets.h1">Le journal de port</h3>
     <ol class="steps">
-      <li>Ouvrez un bracelet, puis touchez <b>« Porté aujourd'hui »</b>.</li>
-      <li>Indiquez votre <b>humeur de 0 à 10 au réveil et en fin de journée</b>.</li>
-      <li>Notez les <b>points positifs</b> et <b>négatifs</b> (des critères adaptés au bracelet vous sont proposés).</li>
+      <li data-i18n-html="g.bracelets.s1">Ouvrez un bracelet, puis touchez <b>« Porté aujourd'hui »</b>.</li>
+      <li data-i18n-html="g.bracelets.s2">Indiquez votre <b>humeur de 0 à 10 au réveil et en fin de journée</b>.</li>
+      <li data-i18n-html="g.bracelets.s3">Notez les <b>points positifs</b> et <b>négatifs</b> (des critères adaptés au bracelet vous sont proposés).</li>
     </ol>
-    <p>Une <b>synthèse évolutive</b> se recalcule à chaque port : nombre de jours, humeur moyenne début → fin, amélioration ressentie, points positifs et de vigilance qui reviennent.</p>
-    <h3>Sur la fiche du bracelet</h3>
+    <p data-i18n-html="g.bracelets.p2">Une <b>synthèse évolutive</b> se recalcule à chaque port : nombre de jours, humeur moyenne début → fin, amélioration ressentie, points positifs et de vigilance qui reviennent.</p>
+    <h3 data-i18n="g.bracelets.h2">Sur la fiche du bracelet</h3>
     <ul class="pts">
-      <li><b>Tableau de synergie</b> (4 axes) en couleurs, pierres et total de perles.</li>
-      <li>Suggestions d'<b>amélioration</b> de la composition avant de modifier.</li>
-      <li>Photo modifiable, notes libres.</li>
-      <li>Entretien : « J'ai purifié / rechargé », <b>planification</b> et <b>historique</b>.</li>
+      <li data-i18n-html="g.bracelets.b1"><b>Tableau de synergie</b> (4 axes) en couleurs, pierres et total de perles.</li>
+      <li data-i18n-html="g.bracelets.b2">Suggestions d'<b>amélioration</b> de la composition avant de modifier.</li>
+      <li data-i18n="g.bracelets.b3">Photo modifiable, notes libres.</li>
+      <li data-i18n-html="g.bracelets.b4">Entretien : « J'ai purifié / rechargé », <b>planification</b> et <b>historique</b>.</li>
     </ul>
-    <a class="back" href="#">↑ Sommaire</a>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
 <section class="doc" id="entretien">
   <div class="wrap">
-    <div class="eyebrow">Entretien</div>
-    <h2 class="t"><span class="lead-em">🌙</span>Purification, rechargement & rappels</h2>
-    <p>Lithocoon vous aide à entretenir vos pierres et bracelets, et à ne rien oublier.</p>
-    <h3>Planifier pour plusieurs éléments à la fois</h3>
+    <div class="eyebrow" data-i18n="g.entretien.eyebrow">Entretien</div>
+    <h2 class="t"><span class="lead-em">🌙</span><span data-i18n="g.entretien.t">Purification, rechargement & rappels</span></h2>
+    <p data-i18n="g.entretien.p">Lithocoon vous aide à entretenir vos pierres et bracelets, et à ne rien oublier.</p>
+    <h3 data-i18n="g.entretien.h1">Planifier pour plusieurs éléments à la fois</h3>
     <ol class="steps">
-      <li>Dans « Mes pierres », touchez <b>Planifier</b> (section « Entretien à planifier »).</li>
-      <li>Choisissez le <b>type</b> (purification ou rechargement) et l'<b>échéance</b> (7 j, 14 j, 1 mois).</li>
-      <li><b>Cochez plusieurs</b> pierres et/ou bracelets, puis validez : un rappel daté est créé pour chacun.</li>
+      <li data-i18n-html="g.entretien.s1">Dans « Mes pierres », touchez <b>Planifier</b> (section « Entretien à planifier »).</li>
+      <li data-i18n-html="g.entretien.s2">Choisissez le <b>type</b> (purification ou rechargement) et l'<b>échéance</b> (7 j, 14 j, 1 mois).</li>
+      <li data-i18n-html="g.entretien.s3"><b>Cochez plusieurs</b> pierres et/ou bracelets, puis validez : un rappel daté est créé pour chacun.</li>
     </ol>
     <ul class="pts">
-      <li>Les rappels <b>en retard</b> sont mis en évidence.</li>
-      <li>Touchez <b>« Fait »</b> pour l'enregistrer dans l'historique (et mettre à jour la date de nettoyage du bracelet).</li>
-      <li>Chaque pierre/bracelet garde son <b>historique</b> d'entretiens.</li>
+      <li data-i18n-html="g.entretien.b1">Les rappels <b>en retard</b> sont mis en évidence.</li>
+      <li data-i18n-html="g.entretien.b2">Touchez <b>« Fait »</b> pour l'enregistrer dans l'historique (et mettre à jour la date de nettoyage du bracelet).</li>
+      <li data-i18n-html="g.entretien.b3">Chaque pierre/bracelet garde son <b>historique</b> d'entretiens.</li>
     </ul>
-    <a class="back" href="#">↑ Sommaire</a>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
 <section class="doc" id="therapeute">
   <div class="wrap">
-    <div class="eyebrow">Réservé aux professionnels</div>
-    <h2 class="t"><span class="lead-em">🧰</span>Mode thérapeute</h2>
-    <p>Activez le mode thérapeute dans les Réglages pour gérer un stock et des bracelets clients.</p>
+    <div class="eyebrow" data-i18n="g.therapeute.eyebrow">Réservé aux professionnels</div>
+    <h2 class="t"><span class="lead-em">🧰</span><span data-i18n="g.therapeute.t">Mode thérapeute</span></h2>
+    <p data-i18n="g.therapeute.p">Activez le mode thérapeute dans les Réglages pour gérer un stock et des bracelets clients.</p>
     <ul class="pts">
-      <li><b>Pierres en stock</b> par catégorie (perles, argent, intercalaires, fermoirs) avec photo, taille et quantité.</li>
-      <li><b>Jauges de stock</b> avec alertes orange/rouge ; seuils entièrement <b>configurables</b> dans les Réglages.</li>
-      <li>Actions rapides : <b>utiliser</b> des perles, <b>réapprovisionner</b>, éditer, supprimer.</li>
-      <li>Bracelets <b>clients</b> regroupés par nom, avec <b>décompte automatique</b> du stock.</li>
+      <li data-i18n-html="g.therapeute.b1"><b>Pierres en stock</b> par catégorie (perles, argent, intercalaires, fermoirs) avec photo, taille et quantité.</li>
+      <li data-i18n-html="g.therapeute.b2"><b>Jauges de stock</b> avec alertes orange/rouge ; seuils entièrement <b>configurables</b> dans les Réglages.</li>
+      <li data-i18n-html="g.therapeute.b3">Actions rapides : <b>utiliser</b> des perles, <b>réapprovisionner</b>, éditer, supprimer.</li>
+      <li data-i18n-html="g.therapeute.b4">Bracelets <b>clients</b> regroupés par nom, avec <b>décompte automatique</b> du stock.</li>
     </ul>
-    <a class="back" href="#">↑ Sommaire</a>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
 <section class="doc" id="reglages">
   <div class="wrap">
-    <div class="eyebrow">Réglages</div>
-    <h2 class="t"><span class="lead-em">⚙️</span>Réglages & accès</h2>
+    <div class="eyebrow" data-i18n="g.reglages.eyebrow">Réglages</div>
+    <h2 class="t"><span class="lead-em">⚙️</span><span data-i18n="g.reglages.t">Réglages & accès</span></h2>
     <ul class="pts">
-      <li><b>Accès biométrique</b> : verrouillez l'app par empreinte / visage.</li>
-      <li><b>Langue</b> (9 langues), <b>thème</b> clair/sombre/système, <b>taille du texte</b>.</li>
-      <li><b>Mode thérapeute</b> et <b>seuils de stock</b>.</li>
-      <li><b>Version complète</b> : collez votre licence pour tout débloquer.</li>
-      <li><b>Détails des versions</b> : l'historique des nouveautés.</li>
+      <li data-i18n-html="g.reglages.b1"><b>Accès biométrique</b> : verrouillez l'app par empreinte / visage.</li>
+      <li data-i18n-html="g.reglages.b2"><b>Langue</b> (9 langues), <b>thème</b> clair/sombre/système, <b>taille du texte</b>.</li>
+      <li data-i18n-html="g.reglages.b3"><b>Mode thérapeute</b> et <b>seuils de stock</b>.</li>
+      <li data-i18n-html="g.reglages.b4"><b>Version complète</b> : collez votre licence pour tout débloquer.</li>
+      <li data-i18n-html="g.reglages.b5"><b>Détails des versions</b> : l'historique des nouveautés.</li>
     </ul>
-    <a class="back" href="#">↑ Sommaire</a>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
 <section class="doc" id="maj">
   <div class="wrap">
-    <div class="eyebrow">Mises à jour</div>
-    <h2 class="t"><span class="lead-em">⬇️</span>Mises à jour & licence</h2>
-    <p>À l'ouverture, l'app vérifie s'il existe une nouvelle version et vous propose de la télécharger.</p>
+    <div class="eyebrow" data-i18n="g.maj.eyebrow">Mises à jour</div>
+    <h2 class="t"><span class="lead-em">⬇️</span><span data-i18n="g.maj.t">Mises à jour & licence</span></h2>
+    <p data-i18n="g.maj.p">À l'ouverture, l'app vérifie s'il existe une nouvelle version et vous propose de la télécharger.</p>
     <ul class="pts">
-      <li>Vos <b>pierres, bracelets, réglages et votre licence sont conservés</b> lors d'une mise à jour.</li>
-      <li>Si vous avez sauté des versions, vous pouvez installer <b>directement la dernière</b> sans rien perdre.</li>
-      <li><b>Astuce (APK) :</b> pour que la mise à jour s'installe sur l'app existante, gardez la <b>même app</b> — si une seconde icône apparaît, c'est une très ancienne version d'un autre identifiant : désinstallez l'ancienne, gardez la nouvelle, les mises à jour suivantes s'installeront en place.</li>
+      <li data-i18n-html="g.maj.b1">Vos <b>pierres, bracelets, réglages et votre licence sont conservés</b> lors d'une mise à jour.</li>
+      <li data-i18n-html="g.maj.b2">Si vous avez sauté des versions, vous pouvez installer <b>directement la dernière</b> sans rien perdre.</li>
+      <li data-i18n-html="g.maj.b3"><b>Astuce (APK) :</b> pour que la mise à jour s'installe sur l'app existante, gardez la <b>même app</b> — si une seconde icône apparaît, c'est une très ancienne version d'un autre identifiant : désinstallez l'ancienne, gardez la nouvelle, les mises à jour suivantes s'installeront en place.</li>
     </ul>
-    <a class="back" href="#">↑ Sommaire</a>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
 <section class="doc" id="confid">
   <div class="wrap">
-    <div class="eyebrow">Vie privée</div>
-    <h2 class="t"><span class="lead-em">🔒</span>Confidentialité</h2>
-    <p>Aucune donnée personnelle envoyée sur Internet, aucun compte à créer. Tout reste sur votre téléphone. Voir la <a href="privacy.html" style="color:var(--or);font-weight:700">politique de confidentialité</a>.</p>
-    <a class="back" href="#">↑ Sommaire</a>
+    <div class="eyebrow" data-i18n="g.confid.eyebrow">Vie privée</div>
+    <h2 class="t"><span class="lead-em">🔒</span><span data-i18n="g.confid.t">Confidentialité</span></h2>
+    <p data-i18n-html="g.confid.p">Aucune donnée personnelle envoyée sur Internet, aucun compte à créer. Tout reste sur votre téléphone. Voir la <a href="privacy.html" style="color:var(--or);font-weight:700">politique de confidentialité</a>.</p>
+    <a class="back" href="#" data-i18n="g.back">↑ Sommaire</a>
   </div>
 </section>
 
@@ -323,11 +325,12 @@
 
 <footer>
   <div class="wrap">
-    <strong>Lithocoon</strong> — par Bengacoon · Disponible en 9 langues<br>
-    <a href="index.html">Accueil</a> &nbsp;·&nbsp; <a href="privacy.html">Politique de confidentialité</a> &nbsp;·&nbsp; © 2026 Bengacoon
-    <p class="disc">Lithocoon est une application de bien-être. La lithothérapie est présentée comme une tradition de bien-être : elle n'établit aucun diagnostic, ne constitue pas un traitement et ne remplace pas l'avis d'un professionnel de santé.</p>
+    <span data-i18n-html="g.foot.brand"><strong>Lithocoon</strong> — par Bengacoon · Disponible en 9 langues</span><br>
+    <a href="index.html" data-i18n="nav.home">Accueil</a> &nbsp;·&nbsp; <a href="privacy.html" data-i18n="foot.policy">Politique de confidentialité</a> &nbsp;·&nbsp; <span data-i18n="foot.copy">© 2026 Bengacoon</span>
+    <p class="disc" data-i18n="foot.disc">Lithocoon est une application de bien-être. La lithothérapie est présentée comme une tradition de bien-être : elle n'établit aucun diagnostic, ne constitue pas un traitement et ne remplace pas l'avis d'un professionnel de santé.</p>
   </div>
 </footer>
 
+<script src="i18n.js" defer></script>
 </body>
 </html>
