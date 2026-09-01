@@ -17,15 +17,20 @@
   a{color:inherit}
   .wrap{max-width:900px;margin:0 auto;padding:0 22px}
 
-  header{position:sticky;top:0;z-index:20;background:rgba(246,242,233,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--creme-2)}
-  header .wrap{display:flex;align-items:center;gap:12px;height:64px;max-width:1040px}
+  header{position:sticky;top:0;z-index:20;background:rgba(246,242,233,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--creme-2)}
+  header .wrap{display:flex;align-items:center;gap:14px;min-height:64px;max-width:1040px;margin:0 auto;flex-wrap:wrap}
+  header .logo-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
   header img{width:36px;height:36px;border-radius:9px}
   header .brand{font-weight:800;font-size:19px;letter-spacing:.2px}
   header .brand small{display:block;font-weight:600;font-size:11px;color:var(--muted);letter-spacing:.3px}
-  header nav{margin-left:auto;display:flex;gap:22px;font-size:14px;font-weight:600}
-  header nav a{color:var(--muted);text-decoration:none}
+  header nav{margin-left:auto;display:flex;gap:20px;font-size:14px;font-weight:600;flex-wrap:wrap;justify-content:flex-end}
+  header nav a{color:var(--muted);text-decoration:none;white-space:nowrap}
   header nav a:hover{color:var(--nuit)}
-  @media(max-width:640px){header nav{display:none}}
+  @media(max-width:640px){
+    header .wrap{flex-direction:column;gap:8px;padding:10px 0;min-height:0}
+    header .brand small{display:none}
+    header nav{margin-left:0;justify-content:center;gap:12px 16px;font-size:13.5px}
+  }
 
   .top{background:linear-gradient(160deg,var(--nuit) 0%,var(--nuit-fonce) 100%);color:#fff;text-align:center;padding:52px 0 56px}
   .top .par{color:var(--or-clair);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
@@ -70,12 +75,13 @@
 
 <header>
   <div class="wrap">
-    <img src="assets/icon.png" alt="Lithocoon">
-    <div class="brand">Lithocoon<small>par Bengacoon</small></div>
+    <a href="index.html" class="logo-link"><img src="assets/icon.png" alt="Lithocoon"><span class="brand">Lithocoon<small>par Bengacoon</small></span></a>
     <nav>
       <a href="index.html">Accueil</a>
+      <a href="index.html#fonctions">Fonctions</a>
+      <a href="guide.html">Guide</a>
       <a href="index.html#premium">Version complète</a>
-      <a href="privacy.html">Mentions</a>
+      <a href="privacy.html">Confidentialité</a>
     </nav>
   </div>
 </header>
