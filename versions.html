@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Versions — Lithocoon</title>
+<meta name="description" content="Historique des versions de Lithocoon : nouveautés et corrections de chaque mise à jour.">
+<link rel="icon" href="assets/favicon.png">
+<style>
+  :root{--nuit:#2E2A47;--nuit-fonce:#211E36;--or:#C9A86A;--or-clair:#E3CB98;--creme:#F6F2E9;--creme-2:#EEE7D7;--texte:#2A2A28;--muted:#6E6A60;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--texte);background:var(--creme);line-height:1.6}
+  a{color:inherit}
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px}
+  header{position:sticky;top:0;z-index:20;background:rgba(246,242,233,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--creme-2)}
+  header .wrap{display:flex;align-items:center;gap:14px;min-height:64px;max-width:1040px;margin:0 auto;flex-wrap:wrap}
+  header .logo-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+  header img{width:36px;height:36px;border-radius:9px}
+  header .brand{font-weight:800;font-size:19px;letter-spacing:.2px}
+  header .brand small{display:block;font-weight:600;font-size:11px;color:var(--muted);letter-spacing:.3px}
+  header nav{margin-left:auto;display:flex;gap:20px;font-size:14px;font-weight:600;flex-wrap:wrap;justify-content:flex-end;align-items:center}
+  header nav a{color:var(--muted);text-decoration:none;white-space:nowrap}
+  header nav a:hover{color:var(--nuit)}
+  .langsel{font:inherit;font-size:13px;font-weight:600;color:var(--muted);background:#fff;border:1px solid var(--creme-2);border-radius:8px;padding:4px 8px}
+  @media(max-width:640px){header .wrap{flex-direction:column;gap:8px;padding:10px 0;min-height:0}header .brand small{display:none}header nav{margin-left:0;justify-content:center;gap:12px 16px;font-size:13.5px}}
+  .top{background:linear-gradient(160deg,var(--nuit) 0%,var(--nuit-fonce) 100%);color:#fff;text-align:center;padding:46px 0 50px}
+  .top .par{color:var(--or-clair);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+  .top h1{font-size:34px;font-weight:800;letter-spacing:-.5px}
+  .top p{max-width:560px;margin:12px auto 0;font-size:16px;color:#E9E6F2}
+  main{padding:40px 0 30px}
+  .vcard{background:#fff;border:1px solid var(--creme-2);border-radius:16px;padding:18px 22px;margin-bottom:14px}
+  .vhead{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;border-bottom:1px solid var(--creme-2);padding-bottom:8px}
+  .vnum{font-weight:800;font-size:18px;color:var(--nuit)}
+  .vdate{color:var(--muted);font-size:13px}
+  .vcard ul{list-style:none}
+  .vcard li{position:relative;padding:4px 0 4px 22px;font-size:14.5px;color:var(--texte)}
+  .vcard li::before{content:"◆";position:absolute;left:2px;color:var(--or);font-size:11px;top:8px}
+  footer{background:var(--nuit-fonce);color:#BEB8D0;text-align:center;padding:30px 0;font-size:13px;margin-top:14px}
+  footer a{color:var(--or-clair);text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="index.html" class="logo-link"><img src="assets/icon.png" alt="Lithocoon"><span class="brand">Lithocoon<small>par Bengacoon</small></span></a>
+    <nav>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="index.html#fonctions" data-i18n="nav.features">Fonctions</a>
+      <a href="guide.html" data-i18n="nav.guide">Guide</a>
+      <a href="versions.html" data-i18n="nav.versions">Versions</a>
+      <a href="index.html#premium" data-i18n="nav.premium">Version complète</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Confidentialité</a>
+      <select id="langSel" class="langsel" aria-label="Langue / Language"></select>
+    </nav>
+  </div>
+</header>
+
+<div class="top">
+  <div class="wrap">
+    <div class="par" data-i18n="ver.eyebrow">Historique</div>
+    <h1 data-i18n="ver.title">Versions & nouveautés</h1>
+    <p data-i18n="ver.sub">Le détail de chaque mise à jour de Lithocoon. Ce journal est aussi disponible dans l'app (Réglages → Détails des versions).</p>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.23</span><span class="vdate">2026-09</span></div>
+      <ul>
+        <li>Fiches des 140 pierres désormais traduites : anglais disponible (les autres langues arrivent). Repli automatique sur le français si une langue n'est pas encore traduite.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.22</span><span class="vdate">2026-09</span></div>
+      <ul>
+        <li>Localisation des textes générés automatiquement (placement des pierres dans la maison, synthèse du journal de port, critères de ressenti et fonctions de l'assistant) dans les 9 langues.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.21</span><span class="vdate">2026-09</span></div>
+      <ul>
+        <li>Traduction complète dans les 9 langues des nouveaux écrans (pierres de maison, journal de port, planification et entretien), du guide intégré et de l'écran Créer.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.20</span><span class="vdate">2026-09</span></div>
+      <ul>
+        <li>Le guide d'utilisation complet est désormais intégré DANS l'app (Réglages → Guide d'utilisation) : consultable hors ligne, sans connexion.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.19</span><span class="vdate">2026-09</span></div>
+      <ul>
+        <li>Nouveau guide d'utilisation complet : Réglages → « Guide d'utilisation » (également en ligne sur le site).</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.18</span><span class="vdate">2026-09</span></div>
+      <ul>
+        <li>Mes pierres = pierres à disposer chez soi : où les placer / où éviter et pourquoi, purification &amp; rechargement conseillés, et compatibilités pour en réunir plusieurs.</li>
+        <li>Bracelets : journal de port (humeur 0→10 au réveil et le soir + points positifs/négatifs) avec une synthèse qui s'affine à chaque port.</li>
+        <li>Purification &amp; rechargement : planification datée (plusieurs pierres/bracelets d'un coup) et suivi de ce qui a été fait.</li>
+        <li>Assistant : propose vos propres bracelets qui correspondent au besoin ou à l'humeur choisis.</li>
+        <li>Tableau de synergie des bracelets de nouveau en couleurs.</li>
+        <li>Mises à jour plus sûres et plus soignées : données et licence conservées, possibilité de sauter directement à la dernière version.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.17</span><span class="vdate">2026-09</span></div>
+      <ul>
+        <li>Photos photoréalistes fidèles pour les 4 nouvelles pierres : Moqui, Jaspe léopard, Jaspe sang de dragon et Pierre de lave.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.15</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Composer un bracelet : ajoutez une photo, et modifiez-la ensuite depuis la fiche du bracelet.</li>
+        <li>Noms de bracelet suggérés plus évocateurs (ex. « Bulle de Sérénité », « Racines &amp; Élan »).</li>
+        <li>Le tableau de synergie globale (4 axes) s'affiche désormais sur chaque bracelet enregistré.</li>
+        <li>« Ratio idéal » : la répartition garde le même nombre total de perles — la taille du bracelet ne change plus.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.14</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Mode thérapeute : éditez entièrement une perle du stock (nom, catégorie, taille, quantité, photo) et ajoutez-en si vous en achetez.</li>
+        <li>Jauges de stock par catégorie (base 100 pour les perles, 20 argent, 40 intercalaires) avec alertes orange/rouge — toutes ces valeurs sont modifiables dans les Réglages.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.13</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Correctif important : vos bracelets, pierres et stock ne sont PLUS effacés lors des mises à jour (vraies migrations de base de données).</li>
+        <li>« Mes pierres » réorganisé : d'abord Mes pierres, puis Mes bracelets, puis le stock.</li>
+        <li>Bibliothèque : filtres plus compacts (une ligne de boutons, options au clic).</li>
+        <li>Mode thérapeute : bracelet attribuable à un client + décompte automatique du stock.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.11</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Mode thérapeute : onglet « Pierres en stock » par catégorie — perles (pierres), perles argent, intercalaires et fermoirs, avec photo, taille et quantité.</li>
+        <li>Barre de niveau + alerte de réapprovisionnement (orange sous 20, rouge sous 10) et décompte des perles utilisées.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.10</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Bibliothèque : filtres couleur, chakra et fonction repliés — un appui sur le titre les déroule ; bouton « Réinitialiser ».</li>
+        <li>Bibliothèque : choix de l'affichage en grille ou en liste (comme la page Créer).</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.9</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Composer &amp; Mes pierres : bouton « Suggérer un nom » de bracelet selon les pierres choisies.</li>
+        <li>Mes pierres : appuyez sur une pierre pour agrandir la photo, écrire une note, voir sur quel poignet la porter et ses associations, et ouvrir sa fiche.</li>
+        <li>Mes bracelets : dans l'entretien, chaque pierre n'apparaît qu'une seule fois.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.8</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>4 nouvelles pierres : Moqui, jaspe léopard, jaspe sang de dragon, pierre de lave (140 au total).</li>
+        <li>Composer un bracelet : après enregistrement, la composition se remet à zéro pour en créer un autre.</li>
+        <li>Mes bracelets : le nombre de perles par pierre s'affiche désormais.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.7</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Les photos de vos pierres et bracelets sont désormais conservées durablement (elles ne disparaissent plus après un redémarrage).</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.6</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Nouveau : « Mes pierres » — ajoutez les pierres que vous possédez (hors bracelets), avec une photo, et reliez-les au catalogue.</li>
+        <li>« Tirage / carte du jour » renommé « Pierres du jour ».</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.5</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Chaque fiche pierre indique les pierres à associer et celles à éviter d'associer (appuyez pour ouvrir).</li>
+        <li>Le rappel de pleine lune invite désormais à purifier ET recharger vos pierres.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.4</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Nouveau : chaque fiche pierre (et bracelet) indique sur quel poignet la porter — gauche pour recevoir, droit pour émettre, selon la polarité.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.3</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Assistant réorganisé : Humeur du jour, Votre besoin et Questionnaire (court ou complet) en sections dépliables ; les pierres s'affichent au fur et à mesure.</li>
+        <li>Déverrouillage par empreinte possible seul, sans code PIN.</li>
+        <li>Retrait des liens d'achat en boutique dans les fiches.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.2</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Le journal des versions est désormais regroupé sous « Détails des versions » (un appui l'ouvre).</li>
+        <li>Vérification des mises à jour plus claire : un message confirme désormais le résultat.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.1</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Correction d'un plantage au démarrage sur certains appareils récents (Android 16).</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.9.0</span><span class="vdate">2026-08</span></div>
+      <ul>
+        <li>Version complète débloquée par licence nominative (édition téléchargée hors store).</li>
+        <li>Vérification des mises à jour adaptée à la source d'installation.</li>
+        <li>Corrections et améliorations diverses.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.8.0</span><span class="vdate">2026-07</span></div>
+      <ul>
+        <li>24 nouvelles pierres (136 au total) : pierre de soleil, calcites, alexandrite, obsidiennes dorée et arc-en-ciel…</li>
+        <li>Favoris : marquez vos pierres d'un cœur et retrouvez-les d'un filtre.</li>
+        <li>Nouvel écran « Les chakras » : explorez les pierres par centre d'énergie.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.7.0</span><span class="vdate">2026-07</span></div>
+      <ul>
+        <li>Filtres pierres repensés : pastilles de couleur et chips de chakra colorées.</li>
+        <li>Assistant plus lisible avec filtres par besoin et par chakra.</li>
+        <li>Créateur : bouton d'enregistrement en haut, remontée auto à la sélection.</li>
+        <li>Graphes de synergie en couleur.</li>
+        <li>Numéro de version affiché sur l'accueil.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.5.0</span><span class="vdate">2026-07</span></div>
+      <ul>
+        <li>Version gratuite de découverte (56 pierres) et version complète.</li>
+        <li>La version complète débloque toutes les pierres, la création de bracelets, le journal et les rituels.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.4.0</span><span class="vdate">2026-07</span></div>
+      <ul>
+        <li>Journal de ressentis avec courbe d'évolution (Premium).</li>
+        <li>Calendrier lunaire et rituel de purification guidé.</li>
+        <li>Notification « pierre du jour » et rappel de pleine lune.</li>
+        <li>Lien vers la boutique depuis les fiches pierres et bracelets.</li>
+        <li>Achat Premium intégré (Google Play) et gestion des mises à jour.</li>
+        <li>3 bracelets « Collection Prestige » avec leurs visuels.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.3.0</span><span class="vdate">2026-07</span></div>
+      <ul>
+        <li>Nouvelle « Collection Prestige » : 24 pierres inédites (112 pierres au total).</li>
+        <li>Azurite, tourmalines pastèque/rose/verte, quartz rutile, ametrine, super seven…</li>
+        <li>Badge doré « Prestige » dans la bibliothèque.</li>
+        <li>Version gratuite et version complète : accès premium au catalogue étendu.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">1.2.0</span><span class="vdate">2026-06</span></div>
+      <ul>
+        <li>Réglages complets : thème, taille du texte, voix, notifications, mode thérapeute.</li>
+        <li>Verrou par code PIN et empreinte digitale.</li>
+        <li>Interface disponible en 9 langues.</li>
+        <li>Composition pondérée dans le configurateur.</li>
+        <li>Notes personnelles sur les bracelets.</li>
+        <li>Nouveaux visuels.</li>
+      </ul>
+    </div>
+    <div class="vcard">
+      <div class="vhead"><span class="vnum">0.1.0</span><span class="vdate">2026-07</span></div>
+      <ul>
+        <li>Première version de Lithocoon.</li>
+        <li>88 pierres détaillées et 15 bracelets Bengacoon.</li>
+        <li>Configurateur avec composition pondérée.</li>
+        <li>Assistant de choix de pierre et oracle du jour.</li>
+        <li>Mes bracelets : photo et notes personnelles.</li>
+        <li>Rappels d'entretien (purification / rechargement).</li>
+        <li>Verrou par code PIN et empreinte digitale.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Bengacoon · <a href="index.html">Lithocoon</a></div>
+</footer>
+
+<script src="i18n.js" defer></script>
+</body>
+</html>

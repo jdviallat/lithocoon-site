@@ -194,7 +194,11 @@ window.I18N = {
 "g.confid.eyebrow": "Privacy",
 "g.confid.t": "Privacy",
 "g.confid.p": "No personal data sent over the internet, no account to create. Everything stays on your phone. See the <a href=\"privacy.html\" style=\"color:var(--or);font-weight:700\">privacy policy</a>.",
-"g.foot.brand": "<strong>Lithocoon</strong> — by Bengacoon · Available in 9 languages"
+"g.foot.brand": "<strong>Lithocoon</strong> — by Bengacoon · Available in 9 languages",
+"nav.versions": "Changelog",
+"ver.eyebrow": "History",
+"ver.title": "Versions & what's new",
+"ver.sub": "The details of every Lithocoon update. This changelog is also available in the app (Settings → Version details)."
 },
 "de": {
 "nav.home": "Startseite",
@@ -390,7 +394,11 @@ window.I18N = {
 "g.confid.eyebrow": "Privatsphäre",
 "g.confid.t": "Datenschutz",
 "g.confid.p": "Keine persönlichen Daten werden ins Internet gesendet, kein Konto nötig. Alles bleibt auf Ihrem Telefon. Siehe die <a href=\"privacy.html\" style=\"color:var(--or);font-weight:700\">Datenschutzerklärung</a>.",
-"g.foot.brand": "<strong>Lithocoon</strong> — von Bengacoon · Verfügbar in 9 Sprachen"
+"g.foot.brand": "<strong>Lithocoon</strong> — von Bengacoon · Verfügbar in 9 Sprachen",
+"nav.versions": "Versionen",
+"ver.eyebrow": "Verlauf",
+"ver.title": "Versionen & Neuigkeiten",
+"ver.sub": "Die Details zu jedem Lithocoon-Update. Dieser Verlauf ist auch in der App verfügbar (Einstellungen → Versionsdetails)."
 },
 "it": {
 "nav.home": "Home",
@@ -586,7 +594,11 @@ window.I18N = {
 "g.confid.eyebrow": "Vita privata",
 "g.confid.t": "Privacy",
 "g.confid.p": "Nessun dato personale inviato su Internet, nessun account da creare. Tutto resta sul tuo telefono. Vedi l'<a href=\"privacy.html\" style=\"color:var(--or);font-weight:700\">informativa sulla privacy</a>.",
-"g.foot.brand": "<strong>Lithocoon</strong> — di Bengacoon · Disponibile in 9 lingue"
+"g.foot.brand": "<strong>Lithocoon</strong> — di Bengacoon · Disponibile in 9 lingue",
+"nav.versions": "Versioni",
+"ver.eyebrow": "Cronologia",
+"ver.title": "Versioni e novità",
+"ver.sub": "I dettagli di ogni aggiornamento di Lithocoon. Questo registro è disponibile anche nell'app (Impostazioni → Dettagli versioni)."
 },
 "pt": {
 "nav.home": "Início",
@@ -782,7 +794,11 @@ window.I18N = {
 "g.confid.eyebrow": "Vida privada",
 "g.confid.t": "Privacidade",
 "g.confid.p": "Nenhum dado pessoal enviado para a Internet, nenhuma conta a criar. Tudo permanece no seu telefone. Consulte a <a href=\"privacy.html\" style=\"color:var(--or);font-weight:700\">política de privacidade</a>.",
-"g.foot.brand": "<strong>Lithocoon</strong> — por Bengacoon · Disponível em 9 idiomas"
+"g.foot.brand": "<strong>Lithocoon</strong> — por Bengacoon · Disponível em 9 idiomas",
+"nav.versions": "Versões",
+"ver.eyebrow": "Histórico",
+"ver.title": "Versões e novidades",
+"ver.sub": "Os detalhes de cada atualização do Lithocoon. Este registo também está disponível na app (Definições → Detalhes das versões)."
 },
 "es": {
 "nav.home": "Inicio",
@@ -978,7 +994,11 @@ window.I18N = {
 "g.confid.eyebrow": "Vida privada",
 "g.confid.t": "Privacidad",
 "g.confid.p": "Ningún dato personal enviado a Internet, ninguna cuenta que crear. Todo permanece en tu teléfono. Consulta la <a href=\"privacy.html\" style=\"color:var(--or);font-weight:700\">política de privacidad</a>.",
-"g.foot.brand": "<strong>Lithocoon</strong> — por Bengacoon · Disponible en 9 idiomas"
+"g.foot.brand": "<strong>Lithocoon</strong> — por Bengacoon · Disponible en 9 idiomas",
+"nav.versions": "Versiones",
+"ver.eyebrow": "Historial",
+"ver.title": "Versiones y novedades",
+"ver.sub": "Los detalles de cada actualización de Lithocoon. Este registro también está disponible en la app (Ajustes → Detalles de versiones)."
 },
 "sv": {
 "nav.home": "Hem",
@@ -1174,7 +1194,11 @@ window.I18N = {
 "g.confid.eyebrow": "Privatliv",
 "g.confid.t": "Integritet",
 "g.confid.p": "Inga personuppgifter skickas över internet, inget konto att skapa. Allt stannar på din telefon. Se <a href=\"privacy.html\" style=\"color:var(--or);font-weight:700\">integritetspolicyn</a>.",
-"g.foot.brand": "<strong>Lithocoon</strong> — av Bengacoon · Tillgänglig på 9 språk"
+"g.foot.brand": "<strong>Lithocoon</strong> — av Bengacoon · Tillgänglig på 9 språk",
+"nav.versions": "Versioner",
+"ver.eyebrow": "Historik",
+"ver.title": "Versioner och nyheter",
+"ver.sub": "Detaljerna för varje Lithocoon-uppdatering. Denna logg finns även i appen (Inställningar → Versionsdetaljer)."
 },
 "no": {
 "nav.home": "Hjem",
@@ -1370,7 +1394,11 @@ window.I18N = {
 "g.confid.eyebrow": "Personvern",
 "g.confid.t": "Personvern",
 "g.confid.p": "Ingen personopplysninger sendes på nett, ingen konto å opprette. Alt blir værende på telefonen din. Se <a href=\"privacy.html\" style=\"color:var(--or);font-weight:700\">personvernerklæringen</a>.",
-"g.foot.brand": "<strong>Lithocoon</strong> — av Bengacoon · Tilgjengelig på 9 språk"
+"g.foot.brand": "<strong>Lithocoon</strong> — av Bengacoon · Tilgjengelig på 9 språk",
+"nav.versions": "Versjoner",
+"ver.eyebrow": "Historikk",
+"ver.title": "Versjoner og nyheter",
+"ver.sub": "Detaljene for hver Lithocoon-oppdatering. Denne loggen er også tilgjengelig i appen (Innstillinger → Versjonsdetaljer)."
 },
 "fi": {
 "nav.home": "Etusivu",
@@ -1566,7 +1594,11 @@ window.I18N = {
 "g.confid.eyebrow": "Yksityisyys",
 "g.confid.t": "Tietosuoja",
 "g.confid.p": "Ei henkilötietoja lähetetä internetiin, ei tiliä luotavaksi. Kaikki pysyy puhelimessasi. Katso <a href=\"privacy.html\" style=\"color:var(--or);font-weight:700\">tietosuojakäytäntö</a>.",
-"g.foot.brand": "<strong>Lithocoon</strong> — Bengacoonilta · Saatavilla 9 kielellä"
+"g.foot.brand": "<strong>Lithocoon</strong> — Bengacoonilta · Saatavilla 9 kielellä",
+"nav.versions": "Versiot",
+"ver.eyebrow": "Historia",
+"ver.title": "Versiot ja uutuudet",
+"ver.sub": "Jokaisen Lithocoon-päivityksen tiedot. Tämä loki on saatavilla myös sovelluksessa (Asetukset → Versiotiedot)."
 }
 };
 
